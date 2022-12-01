@@ -1,21 +1,26 @@
 package com.example.programmer;
 
-public class Programmer {
-    String name;
-    String programmingLanguage;
-    int yearsOfExperience;
+public class Team {
+    String teamName;
+    Programmer p1 = new Programmer();
+    Programmer p2 = new Programmer();
 
-    public void printProgrammerDetails(){
-        System.out.println(name + " " + programmingLanguage + " " + yearsOfExperience);
+
+
+    public void printTeamDetails(){
+        p1.printProgrammerDetails();
+        p2.printProgrammerDetails();
+        System.out.println(teamName);
+        //System.out.println(p1.name + " - " + p1.yearsOfExperience + " - " + p1.programmingLanguage);
+        //System.out.println(p2.name + " - " + p2.yearsOfExperience + " - " + p2.programmingLanguage);
     }
+
 }
 
-    /*create a Java class called Programmer that has:
-        the instance variable name as string
-        the instance variable programmingLanguage as string
-        the instance variable yearsOfExperience as integer
-        the method printProgrammerDetails() that prints all the state of the Programmer object
-        create a Java class called Team that has:
+
+
+
+    /*create a Java class called Team that has:
         an instance variable teamName as string
         2 Programmer objects called p1 and p2
         the method printTeamDetails() that prints:
@@ -34,3 +39,4 @@ public class Programmer {
         assign random values to teamA's programmers p1 and p2 instance variables
         assign random values to teamB's programmers p1 and p2 instance variables
         print teamA and teamB details*/
+
